@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome to Hello Burger!</title>
+    
+    <script>
+	function burgerNow(){
+		document.getElementById('jumbotron').src = 'hamburger.jpg';
+		};
+
+		function friesPlease(){
+		document.getElementById('jumbotron').src = 'fries.jpg';
+		};
+
+    </script>
+    
+</head>
+
+<body>
+<h2 onClick='burgerNow()'>Burgers Now!</h2>
+<h2 onClick='friesPlease()'>Fries Please!</h2>
+
+<img id="jumbotron" src="hamburgerStand.jpg">
+</body>
+</html>

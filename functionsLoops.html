@@ -1,0 +1,30 @@
+<html>
+	
+<head>
+	<title>Welcome to Hello Burger!</title>
+</head>
+	
+    <body>
+
+        <p>Click the button to loop through a block of code five times.</p>
+
+        <button onclick="myFunction()">Loop Counter</button>
+
+        <p id="count"></p>
+
+        <script>
+
+            function myFunction() {
+            var x = " ", i;
+            for (i=0; i<5; i++) {
+                x = x + "Order number " + i + " is up!" + "<br>";
+            }
+            document.getElementById("count").innerHTML = x;
+
+            }
+
+        </script>
+
+    </body>
+    
+</html>

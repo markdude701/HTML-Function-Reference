@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pop-up Shop!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
+        
+        <link href="https://fonts.googleapis.com/css?family=Aldrich|Nothing+You+Could+Do" rel="stylesheet">
+        
+        <script>
+            $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+            });
+
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            });
+
+            $(function () {
+            $('[data-toggle="popover"]').popover()
+            })
+
+        </script>
+        
+        <style>
+            .container{
+                margin-top:"20px";
+                margin-left:"5px";
+                
+                
+                
+            }
+            
+            h1{
+                font-family: 'Nothing You Could Do';
+                cursive; 
+            }
+        
+            h2{
+                font-family: 'Aldrich', sans-serif;
+                
+                
+            }
+            
+            
+        </style>
+    
+    
+    
+    </head>
+    <body>
+        <!--Models-->
+        <div class="container">
+            <h1>Pop-up Annotations :D   !</h1>
+        
+            
+                            <!-- Button trigger modal -->
+            <h2>Model Example></h2>
+            
+            
+            
+            
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Learn More Here!
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title!!!!!!!</h4>
+                  </div>
+                  <div class="modal-body">
+                    THIS BODY HERE! I WANT TO PUT SOME INFORMATION HERE BECAUSE IT SEEMS LIKE A GREAT PLACE
+                      <iframe src="http:www.sanger.dk/" width=300px height=400px></iframe>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        <!--Tool tips -->
+        <h2>tool tips</h2>
+        <div class="container">
+            <p>I head a fly buzz<a data-toggle="tooltip" data-placement="top" title="Dickinson's hyphens are a remind of the experemnet moment pause and wonder at the moment fo death. ">-when I died-</a></p>
+        
+        </div>
+        
+        <!--Pop overs -->
+        <h2>Pop overs / tool tips example</h2>
+        <div class="container">
+            <p>April was the cruelist <a data-toggle="popover" title="TS Eliot" data-content="The sense of cruelty in nature opens an exploration of the nature of human cruelty during the war.">month</a></p>
+        
+        </div>
+    
+    
+    </body>
+    
+    
+
+
+</html>
